@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&family=Inter:wght@600;700&family=Poppins:wght@400;600;700&family=Roboto:wght@400;700&display=swap');
+:root {
+    --Roboto:'Roboto', sans-serif;
+    --Inter:'Inter', sans-serif;
+    --Poppins: 'Poppins', sans-serif;
+    --Baloo: 'Baloo 2', sans-serif;
+    --Darkblue: #101130;
+    --Gray:#606176;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--Roboto);
+}
+body{
+    line-height:1.4;
+    color: var(--Darkblue);
+}
+.container
+{
+    max-width: 1320px;
+    margin: 0 auto;
+    padding: 0 1.2rem;
+}
+
+/* header style start */
+
+header{
+    padding: 1.2rem;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+.navigation .logo a{
+    color: var(--Darkblue);
+    font-size: 24px;
+    display: block;
+    text-decoration: none;
+    font-family: var(--Baloo);
+    letter-spacing: 1px;
+}
+.navbar-nav{
+    padding: 0.8rem 0 0.2rem 0;
+}
+.navbar-nav a{
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+    padding-right: 22.5px;
+    padding-left: 22.5px;
+}
+.navbar-nav a:hover{
+    font-weight: 700;
+    color: var(--Darkblue);
+}
+
+.navbar-button{
+    display: flex;
+}
+.button_mode{
+    margin-right: 10px;
+    background: #D2FFEA;
+    border-radius: 16px;
+    border: none;
+    padding: 10px 10px;
+}
+.button_mode a img{
+    width: 30px;
+    height: 29px;
+}
+.button_text{
+    background: #D2FFEA;
+    border-radius: 12px;
+    border: none;
+    padding: 15px 37px 16px 36px;
+}
+.button_text a{
+    
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: -0.01em;
+    border: none;
+    color: #3BB77E;
+}
+
+/* Header banner style */
+.banner{
+    padding-top: 123px;
+}
+.banner_blog
+{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-between;
+    gap: 13rem;
+}
+.discover_text
+{
+    font-style: normal;
+    /* font-family: 'Poppins', sans-serif; */
+    font-family: var(--Poppins);
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 72px;
+    color: var(--Darkblue);
+}
+.discover_paragrif
+{
+    padding-top: 28px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 32px;
+    color: var(--Gray);
+    padding-bottom: 33px;
+    font-family: var(--Roboto);
+    
+}
+.discover_button{
+    border: none;
+    padding: 20px 50px;
+    background: #D2FFEA;
+    border-radius: 16px;
+}
+.discover_button a
+{
+    font-family: var(--Inter);
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #3BB77E;
+}
+.discover_tittle
+{
+    padding-top: 35px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    color: var(--Gray);
+}
+.discover_tittle a{
+    color: #2076FF;
+}
+/* stop section */
+.plans{
+    align-items: center;
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.plans_taip{
+    margin: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.plans_idea_text{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+    font-family: var(--Poppins);
+}
+
+.virtual_learning_text{
+    padding-top: 26px;
+    padding-bottom: 12px;
+    font-family: var();
+    color: var(--Darkblue);
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+.virtual_learning_tittle{
+    font-family: var(--Roboto);
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+/* section start */
+.school_works{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.school_works_tittle{
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+    letter-spacing: -0.01em;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 44px;
+    line-height: 56px;
+}
+.school_works_button button{
+    padding: 19px 22px;
+    border: 1px solid #2076FF;
+    background-color: #fff;
+    border-radius: 12px;
+}
+.school_works_button a{
+    text-decoration: none;
+    color: #2076FF;
+    
+}
+/*  */
+.school_works-blog{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+.directions_text{
+    padding: 16px 0px 38px 0px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    font-family: var(--Poppins);
+    color: var(--Darkblue);
+}
+.text_icons p{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    font-family: var(--Roboto);
+    color: var(--Gray);
+}
+
+.icons_blog
+{
+    display: flex;
+    /* justify-content: space-between; */
+    padding-bottom: 38px;
+}
+.text_icons img{
+    margin-right: 5px;
+}
+.text_icons{
+    display: flex;
+    align-items: center;
+    margin-right: 19px;
+}
+.shools_course-shop button{
+    border: 1px solid #2076FF;
+    border-radius: 7px;
+    padding: 9px 67px;
+    background-color: #fff;
+}
+.shools_course-shop button a{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.01em;
+    color: #2076FF;
+    text-decoration: none;
+    text-align: center;
+}
+
+
+
+
+
+.navbar_img {
+    display: none;
+}
+@media only screen and (max-width: 1100px) {
+    .banner_img{
+        width: 30%;
+    }
+    .banner_blog
+    {
+        display: flex;
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+    }
+}
+@media only screen and (max-width: 950px) {
+    .navbar_img {
+        display: block;
+    }
+    .navbar-nav{
+        position: absolute;
+        top: 80px;
+    }
+    .navbar-nav a {
+        display: none;  
+    }
+    .button_text{
+        display: none;
+    }
+    .button_mode{
+        display: none;
+    }
+    /* Banner */
+    .banner_blog
+    {
+        /* display: flex; */
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 12rem;
+    }
+    .banner_img{
+        display: none;
+    }
+    /* ___ */ 
+    .plans{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    .plans_product_img img{
+        display: none;
+    }
+    /*  */
+    .school_works-blog{
+        margin: 0 auto;
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+        
+    }
+}
+@media only screen and (max-width: 560px) {
+    .discover_button{
+        width: 100%;
+        border: none;
+        padding: 20px 50px;
+        background: #D2FFEA;
+        border-radius: 16px;
+    }
+    .discover_text
+    {
+        font-style: normal;
+        font-size: 48px;
+        color: var(--Darkblue);
+    }
+    .discover_paragrif
+    {
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 25px;
+    }
+    .discover_paragrif
+    {
+        padding-top: 2px;
+    }
+    .virtual_learning_blog{
+        padding-top: 29px;
+        margin-right: 22px;
+    }
+    .virtual_learning{
+        
+        display: flex;
+        align-items: center;
+        
+    }
+    .virtual_learning_tittle
+    {
+        font-size: 18px;
+    }
+    .plans_taip{
+        margin: 2rem 0;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+    }
+    
+    
+    .plans_idea_text{
+        font-style: normal;
+        font-weight: 700;
+        font-size: 48px;
+        line-height: 56px;
+        font-family: var(--Poppins);
+    }
+    
+}
+@media only screen and (max-width: 400px) {
+    .discover_text{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    .discover_paragrif{
+        padding-top: 10px;
+        font-size: 13px;
+    }
+    .plans_idea_text{
+        font-size: 30px;
+        line-height: 2rem;
+    }
+    .virtual_learning_blog img{
+        width: 60px;
+    }
+    .virtual_learning_tittle{
+        line-height: 1rem;
+        font-size: 13px;
+    }
+}
